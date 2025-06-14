@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-section {
+  position: relative;
+  background: url('background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+.intro-card {
+  position: relative;
+  z-index: 2;
+  background: #ffffffdd;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007acc;
+}
+
+.intro-text {
+  flex: 1;
+  color: #222;
+}
+
+.intro-text h1 {
+  font-size: 28px;
+  color: #007acc;
+  margin-bottom: 5px;
+}
+
+.intro-text h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .intro-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .intro-text h1 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience-section {
+  position: relative;
+  height: 100vh;
+  background: url('education-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.experience-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  width: 90%;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.experience-card h1 {
+  font-size: 32px;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.exp-item {
+  margin-bottom: 25px;
+}
+
+.exp-item h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #ffe082;
+}
+
+.exp-time {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.exp-item p {
+  margin-top: 5px;
+  color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 25px;
+  }
+
+  .experience-card h1 {
+    font-size: 26px;
+  }
+
+  .exp-item h2 {
+    font-size: 18px;
+  }
+}
